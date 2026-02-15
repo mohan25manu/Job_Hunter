@@ -36,12 +36,14 @@ Coordinates the entire job search pipeline by reading company configs and dispat
 
 See [references/skill-routing.md](references/skill-routing.md) for detailed routing logic.
 
-## Deduplication
+## Deduplication (7-Day Window)
 
-Before scoring, check `data/jobs.db` for existing entries by matching:
-- Job title + company name + location (fuzzy match)
-- Direct URL match
-Only new/unseen jobs proceed to scoring.
+Before scoring, check `data/jobs.db` for existing entries:
+- Match by job title + company name + location (fuzzy) OR direct URL match
+- **Only treat as duplicate if last seen within the past 7 days**
+- Jobs seen 7+ days ago are treated as fresh — they may have been reposted or are worth re-evaluating
+- When a previously-seen job reappears, update its `last_seen` timestamp in jobs.db
+- Only truly new/refreshed jobs proceed to scoring
 
 ## Error Handling
 

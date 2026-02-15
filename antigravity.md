@@ -37,7 +37,7 @@ curated results to a Notion database. Self-improves by learning from user feedba
 3. `linkedin-searcher` searches LinkedIn for PM roles (with human-like behavior)
 4. `career-page-searcher` navigates custom career pages
 5. `ats-fetcher` calls public JSON APIs (Greenhouse/Lever) for companies that have them
-6. All results are deduplicated against `data/jobs.db`
+6. All results are deduplicated against `data/jobs.db` (7-day window — jobs seen 7+ days ago are refreshed)
 7. `relevancy-scorer` scores each new job using user profile + `user-learnings.md`
 8. `notion-publisher` pushes high-scoring jobs to the Notion Job Pipeline DB
 
