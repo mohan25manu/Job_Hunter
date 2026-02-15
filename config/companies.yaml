@@ -1,0 +1,130 @@
+# JobPilot — Target Companies
+# Auto-populated from Notion DB: 2d8e7ff25f4180209169d408961ec86d
+# ATS types: greenhouse, lever, ashby, workday, custom, icims, taleo
+# To add companies: add to Notion Target Companies DB, then re-sync
+
+companies:
+  # --- Greenhouse ATS ---
+  - name: Figma
+    ats: greenhouse
+    ats_id: figma
+    careers_url: https://www.figma.com/careers
+
+  - name: Airtable
+    ats: greenhouse
+    ats_id: airtable
+    careers_url: https://airtable.com/careers
+
+  - name: Anthropic
+    ats: greenhouse
+    ats_id: anthropic
+    careers_url: https://www.anthropic.com/careers
+
+  - name: Coinbase
+    ats: greenhouse
+    ats_id: coinbase
+    careers_url: https://www.coinbase.com/careers
+
+  - name: Dropbox
+    ats: greenhouse
+    ats_id: dropbox
+    careers_url: https://www.dropbox.com/jobs
+
+  - name: Robinhood
+    ats: greenhouse
+    ats_id: robinhood
+    careers_url: https://robinhood.com/careers
+
+  - name: Samsara
+    ats: greenhouse
+    ats_id: samsara
+    careers_url: https://www.samsara.com/careers
+
+  - name: Roblox
+    ats: greenhouse
+    ats_id: roblox
+    careers_url: https://careers.roblox.com
+
+  - name: Glean
+    ats: greenhouse
+    ats_id: gleanwork
+    careers_url: https://www.glean.com/careers
+
+  # --- Custom / No Public API ---
+  - name: Rippling
+    ats: custom
+    careers_url: https://www.rippling.com/careers
+
+  - name: Zipline
+    ats: custom
+    careers_url: https://www.flyzipline.com/careers
+
+  - name: BetterUp
+    ats: custom
+    careers_url: https://www.betterup.com/careers
+
+  - name: MongoDB
+    ats: custom
+    careers_url: https://www.mongodb.com/careers
+
+  # --- Workday ATS ---
+  - name: Salesforce
+    ats: workday
+    careers_url: https://careers.salesforce.com
+
+  - name: Adobe
+    ats: workday
+    careers_url: https://careers.adobe.com
+
+  - name: PayPal
+    ats: workday
+    careers_url: https://careers.pypl.com
+
+  - name: ServiceNow
+    ats: workday
+    careers_url: https://careers.servicenow.com
+
+  - name: Zoom
+    ats: workday
+    careers_url: https://careers.zoom.us
+
+  - name: Intuit
+    ats: workday
+    careers_url: https://careers.intuit.com
+
+  - name: Workday
+    ats: workday
+    careers_url: https://workday.wd5.myworkdayjobs.com
+
+  # --- Custom / iCIMS / Taleo ---
+  - name: Google
+    ats: custom
+    careers_url: https://careers.google.com
+
+  - name: Microsoft
+    ats: custom
+    careers_url: https://careers.microsoft.com
+
+  - name: Oracle
+    ats: custom
+    careers_url: https://www.oracle.com/careers
+
+  - name: Uber
+    ats: custom
+    careers_url: https://www.uber.com/us/en/careers
+
+  - name: Twilio
+    ats: custom
+    careers_url: https://www.twilio.com/en-us/company/jobs
+
+  - name: Snowflake
+    ats: custom
+    careers_url: https://careers.snowflake.com
+
+  - name: eBay
+    ats: custom
+    careers_url: https://careers.ebayinc.com
+
+  - name: Atlassian
+    ats: custom
+    careers_url: https://www.atlassian.com/company/careers

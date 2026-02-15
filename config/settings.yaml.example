@@ -1,0 +1,45 @@
+# JobPilot — Settings Template
+# Copy this file to settings.yaml and fill in your values.
+# settings.yaml is gitignored — your secrets stay local.
+#
+# Alternatively, set environment variables (see .env.example):
+#   NOTION_TOKEN, NOTION_TARGET_COMPANIES_DB_ID, NOTION_PARENT_PAGE_ID
+
+notion:
+  # Notion API integration token (from https://www.notion.so/my-integrations)
+  token: "${NOTION_TOKEN}"
+
+  # Target Companies DB ID (from your Notion database URL)
+  target_companies_db_id: "${NOTION_TARGET_COMPANIES_DB_ID}"
+
+  # Parent page ID where Job Pipeline DB will be created
+  parent_page_id: "${NOTION_PARENT_PAGE_ID}"
+
+  # Job Pipeline DB ID (auto-created on first run, then stored here)
+  job_pipeline_db_id: null
+
+llm:
+  # Primary: Claude via Antigravity (no API key needed for interactive runs)
+  provider: null  # Options: openai, anthropic, null (use Antigravity Claude)
+  api_key: null   # Or set via env var OPENAI_API_KEY / ANTHROPIC_API_KEY
+  model: null     # e.g., gpt-4o-mini, claude-3-haiku
+
+schedule:
+  interval_hours: 4
+  freshness_hours: 24
+
+search:
+  max_jobs_per_source: 50
+  min_score_threshold: 50
+  linkedin:
+    date_posted: "past-24h"
+    experience_level: []
+    job_type: []
+    remote: true
+
+anti_detection:
+  min_delay: 1.0
+  max_delay: 4.0
+  scroll_pause_min: 0.5
+  scroll_pause_max: 2.0
+  max_pages: 3

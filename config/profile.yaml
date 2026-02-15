@@ -1,0 +1,132 @@
+# JobPilot — User Profile
+# Extracted from: Resume Mohan.pdf
+# Last updated: 2026-02-14
+
+profile:
+  # --- Resume ---
+  resume_path: config/resume/
+  resume_file: "Resume Mohan.pdf"
+
+  # --- Target Roles ---
+  # Targeting Google L5-equivalent PM roles
+  target_roles:
+    - Senior Product Manager
+    - Product Manager
+    - Product Manager II  # Many companies use this for mid-level
+
+  # --- Seniority ---
+  seniority:
+    pm_experience_min_years: 2
+    pm_experience_max_years: 7    # If role asks for 10+ years PM, not a fit
+    total_experience_years: 11
+    level: mid-senior  # Google L5 equivalent
+
+  # --- Professional Summary ---
+  summary: |
+    Senior Product Manager (9+ years) building AI-assisted workflow products
+    that help teams create, decide, and execute faster. Strength in problem
+    discovery, 0→1 builds, and shipping AI features with evaluation/quality
+    gates and measurable outcomes. Rice MBA (Strategy & Marketing). Patent
+    holder in NLP/cognitive systems.
+
+    Key results:
+    - Boosted customer LTV 15%, reduced churn 7% via multi-agent GenAI sales platform
+    - Protected $7M margin via AI pricing/quoting automation (95% faster)
+    - Built multi-agent contract analyzer — 70% faster reviews, 20% better detection
+    - Created semantic search engine generating ~$1M revenue (patented)
+
+  # --- Skills ---
+  skills:
+    # AI & Technical
+    - GenAI (GPT-4, Claude, LLaMA)
+    - Multi-Agent Systems
+    - RAG Architecture
+    - Agentic Workflows
+    - Conversational AI
+    - NLP / Natural Language Processing
+    - ML Model Integration
+    - Document Processing / OCR
+    - AI Product Strategy
+    - Python
+    - SQL
+    - API Integration
+    - Data Analytics
+    - Cloud Platforms
+
+    # Product Management
+    - 0→1 Product Development
+    - Product Roadmapping
+    - Strategic Planning
+    - Metrics & KPIs
+    - Go-to-Market Strategy
+    - User Experience Design
+    - Prioritization Frameworks
+    - A/B Testing
+    - Agile / Scrum
+
+    # Leadership
+    - Cross-Functional Team Leadership
+    - C-Suite Stakeholder Management
+    - Executive Influence
+
+  # --- Domains ---
+  domains:
+    # Strong fit (deep experience)
+    - AI/ML Products
+    - Enterprise SaaS
+    - Automation & Workflow
+    - Sales & Revenue Platforms
+    - Developer Tools
+    - FinTech
+    # Good fit (relevant experience)
+    - Healthcare / HealthTech
+    - Data Analytics
+    - B2B Platforms
+
+  # --- Education ---
+  education:
+    - degree: MBA
+      school: Rice University, Jones Graduate School of Business
+      focus: Strategy & Marketing
+    - degree: B.Tech, Computer Science
+      school: University of Allahabad
+
+  # --- Experience Companies ---
+  past_companies:
+    - Weatherford International ($7B oilfield services)
+    - eClerx Services Limited
+    - Tata Consultancy Services (TCS)
+
+  # --- Preferences ---
+  preferences:
+    location:
+      - United States  # Open to any location within the US
+    work_type:
+      - remote
+      - hybrid
+      - onsite  # Fine with any arrangement including 5 days in office
+    company_stage:
+      - growth      # Series B-D
+      - late         # Series E+
+      - public       # Large public companies
+    min_company_size: 100
+
+  # --- Deal Breakers ---
+  exclude:
+    titles:
+      - Intern
+      - Associate Product Manager
+      - Junior Product Manager
+    keywords:
+      - "entry level"
+      - "0-2 years experience"
+
+  # --- Negative Scoring (not auto-reject, but penalized) ---
+  penalize:
+    - "does not sponsor" # Visa/international candidate sponsorship
+    - "no visa sponsorship"
+    - "unable to sponsor"
+    - "not able to provide sponsorship"
+    - "10+ years of product management" # Too senior for current PM experience
+    - "12+ years of product management"
+    - "15+ years"
